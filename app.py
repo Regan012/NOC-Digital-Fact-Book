@@ -34,7 +34,7 @@ col4, col5, col6 = st.columns(3)
 # Chart 1: Overall (Top Left)
 with col1:
     st.subheader("Overall Demographics")
-    fig1 = px.pie(df_filtered, names='Demographic', color_discrete_sequence=[noc_red, noc_gray, "#333333"])
+    fig1 = px.pie(df_filtered, names='Demographic', color_discrete_sequence=[noc_red, noc_gray])
     st.plotly_chart(fig1, use_container_width=True)
 
 # Chart 2: Tonkawa
